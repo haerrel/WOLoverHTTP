@@ -2,6 +2,8 @@
 
 ## Run the server
 - install NodeJS
+- clone repo
+- npm install
 - edit app.js
 Insert your mac-address and hostname here.  
 Extend the array to add more clients.  
