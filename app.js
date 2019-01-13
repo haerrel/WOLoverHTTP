@@ -8,7 +8,7 @@ const wol = require('node-wol');
 
 // "ARP"-TABLE
 const arp = [
-	{hostname: 'andreas', mac: '1C:1B:0D:67:34:46'}
+	{hostname: 'andreas', mac: '11:11:11:11:11:11'}
 ];
 
 app.get('/', (req, res) => res.send('WOLoverHTTP is running!'));
