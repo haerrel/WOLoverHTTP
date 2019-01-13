@@ -6,7 +6,10 @@
 Insert your mac-address and hostname here.  
 Extend the array to add more clients.  
 `const arp = [
-{hostname: 'andreas', mac: '11:11:11:11:11:11}
+{hostname: 'yourhostname', mac: '11:11:11:11:11:11}
 ]`
 - in command line:  
 `node app.js`
+
+## Wake up the client
+send a http request to `http://yourserver:3000/wol/yourhostname`
