@@ -6,10 +6,10 @@ const port = 3000;
 // WOL
 const wol = require('node-wol');
 
-// "ARP"-TABLE
-const arp = [
-	{hostname: 'andreas', mac: '11:11:11:11:11:11'}
-];
+// READ ARP TABLE
+const fs = require("fs");
+const arp_table_file = fs.readFileSync("arp_table.json");
+let arp = JSON.parse(arp_table_file);
 
 app.get('/', (req, res) => res.send('WOLoverHTTP is running!'));
 app.get('/wol/:hostname', (req, res) => {
